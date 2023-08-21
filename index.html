@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content=" food blog" />
+    <meta name="author" content="Jojo" />
+    <link rel="icon" href="./images/food-ico.ico" />
+
+    <title>Culinary Adventures: Exploring Flavors Around the World</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/blog/" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+      rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img
+              class="d-inline-block align-text-top"
+              src="./images/food-ico.jpg"
+              width="30"
+              height="24
+            " />
+            food
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" href="/"> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/recipes"> recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="/images">images </a>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <div
+        class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary d-flex flex-wrap">
+        <div class="col-lg-6 px-0">
+          <h1 class="display-4 fst-italic">Hi,there</h1>
+          <p class="lead my-3">
+            Welcome to "Culinary Adventures," a journey through the vibrant and
+            diverse world of gastronomy. Join me as we embark on a delectable
+            expedition, uncovering hidden gems, savoring traditional dishes, and
+            experimenting with innovative flavors. From the bustling streets of
+            Bangkok to the cozy cafes of Paris, we'll traverse continents and
+            cultures, all from the comfort of your kitchen. So, tie on your
+            apron, sharpen those knives, and let's dive into a world of
+            irresistible aromas and mouthwatering delights!
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="./images/taco's.jpg" alt="..." />
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+                >ofada</strong
+              >
+              <h3 class="mb-0">The great ofada rice</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">
+                Certainly! Ofada rice is a unique and delicious variety of rice
+                that originates from Nigeria. It is known for its distinct
+                aroma, rich flavor, and slightly chewy texture. If you're
+                looking to explore Nigerian cuisine and experience the authentic
+                flavors of the region, trying Ofada rice is a must.
+              </p>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                src="./images/OFADA RICE.jpg"
+                alt="ofada rice" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success-emphasis"
+                >Suya</strong
+              >
+              <h3 class="mb-0">Nigeria's Suya</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">
+                Suya is a popular West African street food that originated in
+                Nigeria but is also enjoyed in other countries across the
+                region, such as Ghana, Niger, and Cameroon. It is a flavorful
+                and spicy grilled meat dish that is commonly made with skewered
+                beef, chicken, or occasionally goat meat. Suya is known for its
+                distinctive taste, which comes from a special blend of spices
+                and seasonings used in its preparation.
+              </p>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                src="./images/suya.jpg"
+                alt="suya" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-md-8">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">top dishes</h3>
+
+          <article class="blog-post">
+            <h2 class="display-5 link-body-emphasis mb-1">
+              Nigeria's top twenty exquisite dishes
+            </h2>
+            <p class="blog-post-meta">Januaryby <a href="#">JOJO</a></p>
+
+            <p>
+              Certainly! Nigeria's diverse culinary landscape offers a wide
+              range of delicious and famous dishes. Here are 20 of the most
+              well-known Nigerian dishes:
+            </p>
+            <ol>
+              <li>
+                Jollof Rice: A flavorful one-pot rice dish cooked with tomatoes,
+                peppers, and spices.
+              </li>
+              <li>
+                Pounded Yam and Egusi Soup: Pounded yam served with a soup made
+                from ground melon seeds and assorted meats.
+              </li>
+              <li>
+                Suya: Spicy grilled meat skewers coated with a peanut and chili
+                pepper spice mix.
+              </li>
+              <li>
+                Moimoi: Steamed bean pudding made from blended peeled beans,
+                peppers, onions, and spices.
+              </li>
+              <li>
+                Akara: Deep-fried bean cakes made from black-eyed peas or brown
+                beans.
+              </li>
+              <li>
+                Pounded Yam and Oha Soup: Pounded yam served with a soup made
+                from oha leaves and palm fruit extract.
+              </li>
+              <li>
+                Fufu and Edikang Ikong Soup: Fufu (cassava, yam, or plantain
+                dough) served with a nutritious soup made from leafy vegetables
+                and palm oil.
+              </li>
+              <li>
+                Chin Chin: Crunchy snack made from a dough of flour, sugar, and
+                butter, flavored with nutmeg and deep-fried.
+              </li>
+              <li>
+                Coconut Rice: Rice cooked with coconut milk and spices, often
+                served with fried plantains or grilled meat.
+              </li>
+              <li>
+                Banga Soup: Soup made from palm fruit extract, often cooked with
+                vegetables and assorted meats or fish.
+              </li>
+              <li>
+                Ofada Rice and Ayamase Sauce: Locally grown rice served with a
+                spicy and flavorful sauce made from green bell peppers and
+                assorted meats.
+              </li>
+              <li>
+                Efo Riro: A rich and hearty vegetable stew made with leafy
+                greens, peppers, and assorted meats.
+              </li>
+              <li>
+                Yam Porridge: A comforting dish made from yam cooked with
+                vegetables, peppers, and sometimes fish or meat.
+              </li>
+              <li>
+                Fried Plantains: Ripe plantains sliced and fried until golden
+                and caramelized.
+              </li>
+              <li>
+                Nigerian Pepper Soup: A spicy broth made with assorted meats,
+                fish, and aromatic spices.
+              </li>
+              <li>
+                Egusi Soup: A soup made from ground melon seeds and often cooked
+                with leafy vegetables and assorted meats or fish.
+              </li>
+              <li>
+                White Soup (Ofe Nsala): A light soup made with yam or plantains,
+                spices, and a variety of meats or fish.
+              </li>
+              <li>
+                Boli: Roasted plantains typically served with spicy pepper
+                sauce.
+              </li>
+              <li>
+                Nigerian Pancakes (Puff Puff): Deep-fried dough balls, similar
+                to a sweet, fluffy doughnut
+              </li>
+              <li>
+                Nigerian Meat Pie: Savory pastries filled with spiced meat,
+                potatoes, and vegetables
+              </li>
+            </ol>
+            <p>
+              <strong
+                >These dishes represent just a fraction of the diverse and
+                delicious foods that Nigeria has to offer. Exploring these
+                iconic Nigerian dishes is a fantastic way to experience the rich
+                flavors and cultural heritage of the country.</strong
+              >
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-body-tertiary rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">
+                If you ask me what my favourite Nigeria dishes are i will tell
+                you
+              </p>
+              <ul>
+                <li>boli</li>
+                <li>ofada rice</li>
+                <li>fried rice</li>
+                <li>and perppper soup</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="fst-italic">my favourite nigerian dishes</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#">
+                    <img
+                      class="bd-placeholder-img"
+                      width="100%"
+                      height="96"
+                      src="./images/bole.jpg"
+                      alt="boli" />
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">
+                        "Bole" is a popular Nigerian street food that consists
+                        of roasted plantains (often referred to as "roasted
+                        plantains" themselves) that are typically served with
+                        spicy pepper sauce, onions, and sometimes fish. It is a
+                        flavorful and satisfying snack or light meal commonly
+                        enjoyed across Nigeria, especially in the southern and
+                        southwestern regions.
+                      </h6>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#">
+                    <img
+                      class="bd-placeholder-img"
+                      width="100%"
+                      height="96"
+                      src="./Ofada-stew-2.jpg"
+                      alt="..." />
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">
+                        Ofada rice, also known as "Ofada stew," is a unique and
+                        indigenous variety of rice that is popular in Nigeria,
+                        particularly in the southwestern part of the country. It
+                        is distinctively different from the more common white
+                        rice and has a unique flavor, aroma, and texture.
+                      </h6>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#">
+                    <img
+                      class="bd-placeholder-img"
+                      width="100%"
+                      height="96"
+                      src="./fried rice.webp"
+                      alt="..." />
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">
+                        Fried rice is a versatile and popular dish that has
+                        variations in many cuisines around the world, including
+                        Nigerian cuisine. In Nigeria, fried rice is a flavorful
+                        and colorful rice dish that is often enjoyed at special
+                        occasions, parties, and gatherings. It is a delicious
+                        and festive option that can be customized with a variety
+                        of ingredients to suit different tastes.
+                      </h6>
+                      <small class="text-body-secondary"
+                        >January 13, 2023</small
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-4">
+              <h4 class="fst-italic">Archives</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#">March 2021</a></li>
+                <li><a href="#">February 2021</a></li>
+                <li><a href="#">January 2021</a></li>
+                <li><a href="#">December 2020</a></li>
+                <li><a href="#">November 2020</a></li>
+                <li><a href="#">October 2020</a></li>
+                <li><a href="#">September 2020</a></li>
+                <li><a href="#">August 2020</a></li>
+                <li><a href="#">July 2020</a></li>
+                <li><a href="#">June 2020</a></li>
+                <li><a href="#">May 2020</a></li>
+                <li><a href="#">April 2020</a></li>
+              </ol>
+            </div>
+
+            <div class="p-4">
+              <h4 class="fst-italic">Elsewhere</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+      <p>
+        Blog template built for
+        <a href="https://getbootstrap.com/">Bootstrap</a> by
+        <a href="https://twitter.com/mdo">@mdo</a>.
+      </p>
+      <p class="mb-0">
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
