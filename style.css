@@ -1,0 +1,14 @@
+.hero-recipes {
+  text-decoration: none;
+  color: black;
+}
+.hero-recipes:hover {
+  color: #000080;
+}
+.recipes-con {
+  text-decoration: none;
+  color: black;
+}
+.recipes-con:hover {
+  color: #000080;
+}
